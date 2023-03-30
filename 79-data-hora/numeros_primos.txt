@@ -1,0 +1,48 @@
+#include <iostream>
+#include <cmath>
+#include <ctime>
+
+using namespace std;
+
+int numeros_primos(int n){
+        int i, j;
+        int freq=n-1;
+        //cout << freq << endl;
+        for(i = 2; i <= n; i++){
+            //cout << i << endl;
+            for(j = sqrt(i); j > 1; j--){
+                if((int)sqrt(i)%j==0){
+                    cout << "----------------" << endl;
+                    //cout << sqrt(i) << endl;
+                    cout << j << endl;
+                    //cout << i << endl;
+                    cout << "---------------------" << endl;
+                }
+                
+                //cout << sqrt(i) << endl;
+                if(i%j==0){
+                    --freq;
+                    //cout << freq << endl;
+                    break;
+                }
+            }
+        }
+        
+        return freq;
+    }
+    
+int main()
+{
+    
+    int primos;
+    clock_t t;
+    t=clock();
+    primos = numeros_primos(1000);
+    t=clock() - t;
+    
+    cout << "tempo: " << (float)t << endl;
+    cout << "tempo em segundos: " << (float)t/CLOCKS_PER_SEC << endl;
+    cout << "total de primos: " << primos << endl;
+    
+    return 0;
+}

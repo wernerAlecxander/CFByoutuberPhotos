@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1634842312 source:c:\engineer\c\cfbyoutuber\aula57-extern\files-extern\auxiliar.cpp
+	<iostream>
+
+1634844908 source:c:\engineer\c\cfbyoutuber\aula57-extern\files-extern\main.cpp
+	<iostream>
+	<vector>
+	"variaveis.h"
+
+1634843206 c:\engineer\c\cfbyoutuber\aula57-extern\files-extern\variaveis.h
+
